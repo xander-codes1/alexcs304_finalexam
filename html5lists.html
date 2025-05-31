@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Lists - Alexander Website Portfolio</title>
+    <link rel="stylesheet" href="./html5lists_style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navlogo">
+            <a href="./index.html" class="logo">Alexander</a>
+        </div>
+        <nav class="navlink"> <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/html5tables.html">HTML5 Tables</a></li>
+                <li><a href="/html5lists.html">HTML5 Lists</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lists-page-content">
+        <h1>HTML List Examples</h1> 
+        <section class="list-examples-section">
+            <h2>Various Types of HTML Lists</h2> <table class="list-table">
+                <caption>List example 1 - Ordered Lists</caption>
+                <thead>
+                    <tr>
+                        <th>Type = '1'</th>
+                        <th>Type = 'a'</th>
+                        <th>Type = 'A'</th>
+                        <th>Type = 'i'</th>
+                        <th>Type = 'I'</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ol type="1">
+                                <li>The first step in any project.</li>
+                                <li>The second important phase.</li>
+                                <li>Final stage of implementation.</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol type="a">
+                                <li>Introduction to the topic.</li>
+                                <li>Detailed analysis of points.</li>
+                                <li>Summary and conclusion.</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol type="A">
+                                <li>Main category A.</li>
+                                <li>Main category B.</li>
+                                <li>Main category C.</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol type="i">
+                                <li>Sub-point one.</li>
+                                <li>Sub-point two.</li>
+                                <li>Sub-point three.</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol type="I">
+                                <li>Chapter One: Foundations.</li>
+                                <li>Chapter Two: Advanced Concepts.</li>
+                                <li>Chapter Three: Practical Application.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr class="list-separator">
+
+            <table class="list-table">
+                <caption>List example 2 - Unordered Lists</caption>
+                <thead>
+                    <tr>
+                        <th>Type = 'disc'</th>
+                        <th>Type = 'circle'</th>
+                        <th>Type = 'square'</th>
+                        <th>Custom Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul class="list-disc">
+                                <li>Item with standard disc bullet.</li>
+                                <li>Another item using a disc.</li>
+                                <li>Third item in this list.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="list-circle">
+                                <li>Item with circle bullet.</li>
+                                <li>Another item using a circle.</li>
+                                <li>Third item in this list.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="list-square">
+                                <li>Item with square bullet.</li>
+                                <li>Another item using a square.</li>
+                                <li>Third item in this list.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="list-image">
+                                <li>Custom bullet item 1.</li>
+                                <li>Custom bullet item 2.</li>
+                                <li>Custom bullet item 3.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr class="list-separator">
+
+            <table class="list-table definition-list-table">
+                <caption>List example 3 - Definition Lists</caption>
+                <tbody>
+                    <tr>
+                        <td>
+                            <dl>
+                                <dt>Web Development</dt>
+                                <dd>The process of creating and maintaining websites. It involves front-end (user interface) and back-end (server-side logic) development.</dd>
+                                <dt>User Experience (UX)</dt>
+                                <dd>Focuses on enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product.</dd>
+                                <dt>Search Engine Optimization (SEO)</dt>
+                                <dd>The practice of increasing the quantity and quality of traffic to your website through organic search engine results.</dd>
+                            </dl>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr class="list-separator">
+
+            <table class="list-table nested-list-table">
+                <caption>List example 4 - Nested Ordered List</caption>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ol>
+                                <li>Programming Languages
+                                    <ol type="a">
+                                        <li>Web Development
+                                            <ol type="i">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                            </ol>
+                                        </li>
+                                        <li>Backend Development
+                                            <ol type="i">
+                                                <li>Python</li>
+                                                <li>Java</li>
+                                                <li>Node.js</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>Frameworks
+                                    <ol type="a">
+                                        <li>Front-end Frameworks
+                                            <ol type="i">
+                                                <li>React</li>
+                                                <li>Vue.js</li>
+                                            </ol>
+                                        </li>
+                                        <li>Back-end Frameworks
+                                            <ol type="i">
+                                                <li>Django</li>
+                                                <li>Spring Boot</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr class="list-separator">
+
+            <table class="list-table nested-list-table">
+                <caption>List example 5 - Nested Unordered List</caption>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Popular Beverages
+                                    <ul>
+                                        <li>Hot Drinks
+                                            <ul>
+                                                <li>Coffee</li>
+                                                <li>Tea</li>
+                                                <li>Hot Chocolate</li>
+                                            </ul>
+                                        </li>
+                                        <li>Cold Drinks
+                                            <ul>
+                                                <li>Iced Tea</li>
+                                                <li>Soda</li>
+                                                <li>Smoothies</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Snack Categories
+                                    <ul>
+                                        <li>Salty Snacks
+                                            <ul>
+                                                <li>Chips</li>
+                                                <li>Pretzels</li>
+                                            </ul>
+                                        </li>
+                                        <li>Sweet Snacks
+                                            <ul>
+                                                <li>Cookies</li>
+                                                <li>Candies</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <br>
+    <div class="validator-badges">
+        <h3>This page was last modified on</h3>
+        <p>
+            <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" alt="The W3C HTML5 Logo" style="width:auto;height:31px">
+        </p>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!">
+            </a>
+        </p>
+    </div>
+    <footer>
+        <div class="footer-txt">
+            &copy; Made by Alexander Kelly B. Dela Roca, All Rights reserved 2025.
+        </div>
+    </footer>
+</body>
+</html>

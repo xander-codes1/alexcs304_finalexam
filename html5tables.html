@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Website Portfolio</title>
+    <link rel="stylesheet" href="html5tables_style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navlogo">
+            <a href="./index.html" class="logo">Alexander</a>
+        </div>
+        <nav class="navlink">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/html5tables.html">HTML5 Tables</a></li>
+                <li><a href="/html5lists.html">HTML5 Lists</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Table Examples</h1>
+
+        <section class="table-section">
+            <h2>Table Example 1: Basic Styling via CSS</h2>
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>width</td>
+                        <td>e.g., 100%, 500px</td>
+                    </tr>
+                    <tr>
+                        <td>padding (cellpadding)</td>
+                        <td>e.g., 8px, 15px</td>
+                    </tr>
+                    <tr>
+                        <td>spacing (cellspacing)</td>
+                        <td>e.g., 2px, 5px</td>
+                    </tr>
+                    <tr>
+                        <td>text-align (horizontal)</td>
+                        <td>left, center, right, justify</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>e.g., 1px solid black, none</td>
+                    </tr>
+                    <tr>
+                        <td>background-color (bgcolor)</td>
+                        <td>e.g., #f0f8ff, lightblue, rgba(0,0,0,0.1)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section class="table-section">
+            <h2>Table Example 2: Colspan, Rowspan, and Cell Alignment</h2>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th colspan="2">Product Details</th>
+                        <th>Availability</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-center-middle" rowspan="2">Laptop A</td>
+                        <td class="align-left-top">13-inch screen</td>
+                        <td class="align-center-bottom">In Stock</td>
+                        <td class="align-right-middle">$1200</td>
+                    </tr>
+                    <tr>
+                        <td class="align-left-bottom">8GB RAM, 256GB SSD</td>
+                        <td class="align-center-top">Low Stock</td>
+                        <td class="align-right-top">$1150</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="align-center-middle">Special Offer: Limited Time!</td>
+                        <td class="align-right-bottom">$999</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse X</td>
+                        <td>Wireless, Ergonomic</td>
+                        <td class="align-center-middle">Available</td>
+                        <td class="align-right-middle">$25</td>
+                    </tr>
+                    <tr>
+                        <td>Keyboard Y</td>
+                        <td>Mechanical, RGB</td>
+                        <td class="align-center-middle">Out of Stock</td>
+                        <td class="align-right-middle">$75</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section class="table-section">
+            <h2>Table Example 3: Nested Tables Side-by-Side</h2>
+            <table class="table3-outer">
+                <tr>
+                    <td class="nested-cell-left">
+                        <table class="table3-inner-left">
+                            <caption class="caption-top">Team A Roster</caption>
+                            <thead>
+                                <tr>
+                                    <th>Player</th>
+                                    <th>Role</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>Leader</td>
+                                </tr>
+                                <tr>
+                                    <td>Bob</td>
+                                    <td>Support</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="nested-cell-right">
+                        <table class="table3-inner-right">
+                            <caption class="caption-bottom">Project Milestones</caption>
+                            <thead>
+                                <tr>
+                                    <th>Milestone</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Phase 1 Complete</td>
+                                    <td>2025-06-15</td>
+                                </tr>
+                                <tr>
+                                    <td>Phase 2 Draft</td>
+                                    <td>2025-07-01</td>
+                                </tr>
+                                <tr>
+                                    <td>Final Review</td>
+                                    <td>2025-07-30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section class="table-section">
+            <h2>Table Example 4: Image within a Table Cell</h2>
+            <table class="table4">
+                <tr>
+                    <td>
+                        <img src="./QUANTUM-COMPUTER.jpg" alt="A Quantum Computer with blue light" class="table-image" loading="lazy">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section class="table-section">
+            <h2>Table Example 5: Text Alignment (CS 42)</h2>
+            <table class="table5">
+                <thead>
+                    <tr>
+                        <th>Horizontal Alignment</th>
+                        <th>Vertical Alignment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="align-row-center">
+                        <td class="align-left">CS 42 (Left)</td>
+                        <td class="align-top">CS 42 (Top)</td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">CS 42 (Center)</td>
+                        <td class="align-middle">CS 42 (Middle)</td>
+                    </tr>
+                    <tr class="align-row-right">
+                        <td class="align-right">CS 42 (Right)</td>
+                        <td class="align-bottom">CS 42 (Bottom)</td>
+                    </tr>
+                    <tr>
+                        <td class="align-justify" colspan="2">
+                            CS 42 (Justify) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <br>
+    <div class="validator-badges">
+        <h3>This page was last modified on</h3>
+        <p>
+            <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" alt="The W3C HTML5 Logo" style="width:auto;height:31px">
+        </p>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!">
+            </a>
+        </p>
+    </div>
+    <footer>
+        <div class="footer-txt">
+            &copy; Made by Alexander Kelly B. Dela Roca, All Rights reserved 2025.
+        </div>
+    </footer>
+</body>
+</html>
