@@ -361,7 +361,7 @@ p::first-letter {
     box-shadow: 1px 10px 15px black;
     padding: 42px;
     position: fixed;
-    top: 120px;
+    top: -200px;
     left: 160px;
     z-index: 900;
 }
