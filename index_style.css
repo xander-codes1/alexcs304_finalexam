@@ -60,7 +60,6 @@ p::first-letter {
 .navlink ul {
     display: flex;
     flex-direction: row;
-    justify: flex-end;
     align-items: center;
     list-style-type: none;
     margin: 0;
